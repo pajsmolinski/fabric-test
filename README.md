@@ -10,6 +10,11 @@
 2. npm run start
 3. [http://localhost:3000](http://localhost:3000).
 
+### Instrukcja
+1. sklonuj rozwiązanie 
+2. wykonaj zadania
+3. wrzuć na swoje repozytorium i prześlij nam link
+
 ## Zadania:
 
 ### 1. własna implementacja obramowania aktywnego obiektu
