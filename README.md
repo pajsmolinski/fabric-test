@@ -1,15 +1,4 @@
 
-### Informacje na temat wykorzystanych frameworków
-
-- React > 16.12
-- Fabric > 3.5
-
-### Uruchomienie projektu
-
-1. npm install
-2. npm run start
-3. [http://localhost:3000](http://localhost:3000).
-
 ### Instrukcja
 1. sklonuj rozwiązanie 
 2. wykonaj zadania
@@ -39,3 +28,15 @@ obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy suge
 4. domyślne kontrolka dla akcji 'rotate' jest wyłączona,
 5. domyślne kontrolki dla wszystkich akcji medium są wyłączone
 6 rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce
+
+
+### Informacje na temat wykorzystanych frameworków
+
+- React > 16.12
+- Fabric > 3.5
+
+### Uruchomienie projektu
+
+1. npm install
+2. npm run start
+3. [http://localhost:3000](http://localhost:3000).
