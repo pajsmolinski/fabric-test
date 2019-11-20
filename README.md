@@ -12,13 +12,14 @@
 
 ## Zadania:
 
-### 1. własna implementacja obramowania zaznaczonych obiektów
-Zmodyfikuj kod w taki sposób aby po zaznaczeniu elementu obramowanie zamieniło się z domyślnego w następujące:
+### 1. własna implementacja obramowania aktywnego obiektu
+#### Cel: Zmodyfikuj kod w taki sposób aby po zaznaczeniu elementu obramowanie zmieniło się z domyślnego (A) w następujące (B):
 
 ![](http://nullgravity.eu/github/test_custom_border.png)
 
+obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami.
 
-wymagania:
+#### wymagania:
 1. padding 
 - obramowania 10 px od obiektu,
 - ikony na krańcach 10 px od obramowania,
