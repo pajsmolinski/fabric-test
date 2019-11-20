@@ -38,3 +38,4 @@ obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy suge
 - right-bottom - obracanie obramowanego obiektu zgodnie z ruchem myszki
 4. domyślne kontrolka dla akcji 'rotate' jest wyłączona,
 5. domyślne kontrolki dla wszystkich akcji medium są wyłączone
+6 rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce
