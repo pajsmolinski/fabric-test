@@ -11,7 +11,7 @@
 
 ![](http://nullgravity.eu/github/test_custom_border.png)
 
-obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami.
+Uwaga: obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami.
 
 **wymagania:**
 1. padding 
