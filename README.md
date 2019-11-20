@@ -1,5 +1,5 @@
 
-### Instrukcja
+## Instrukcja
 1. sklonuj rozwiązanie 
 2. wykonaj zadania
 3. wrzuć na swoje repozytorium i prześlij nam link
@@ -30,12 +30,12 @@ obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy suge
 6 rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce
 
 
-### Informacje na temat wykorzystanych frameworków
+## Informacje na temat wykorzystanych frameworków
 
 - React > 16.12
 - Fabric > 3.5
 
-### Uruchomienie projektu
+## Uruchomienie projektu
 
 1. npm install
 2. npm run start
