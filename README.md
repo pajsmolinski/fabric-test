@@ -11,7 +11,7 @@
 
 ![](http://nullgravity.eu/github/test_custom_border.png)
 
-Uwaga: obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami.
+Uwaga: obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami ani konkretnym wyglądem ikon przy narożnikach (mogą być dowolne).
 
 **wymagania:**
 1. padding:
