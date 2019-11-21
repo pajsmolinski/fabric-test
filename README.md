@@ -1,5 +1,8 @@
 
 ## Instrukcja
+
+**Nie rób forka, bo wtedy inni kandydaci będą widzieć Twoje rozwiązanie :)**
+
 1. sklonuj rozwiązanie 
 2. wykonaj zadania
 3. wrzuć na swoje repozytorium i prześlij nam link
