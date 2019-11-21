@@ -14,20 +14,20 @@
 Uwaga: obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami.
 
 **wymagania:**
-1. padding 
+1. padding:
 - obramowania 10 px od obiektu,
 - ikony na krańcach 10 px od obramowania,
 2. ikony:
 - ikona akcji 'rotate' - kółko
 - ikona akcji 'resize' - trójkąt wskazujący kierunek resize
-3. pozycjonowanie ikon akcji.
+3. pozycjonowanie ikon akcji:
 - left-top - obracanie obramowanego obiektu zgodnie z ruchem myszki
 - right-top - skalowanie obramowanego obiektu (jednocześnie w X i Y) zgodnie z ruchem myszki
 - left-bottom - skalowanie obramowanego obiektu (jednocześnie w X i Y) zgodnie z ruchem myszki
 - right-bottom - obracanie obramowanego obiektu zgodnie z ruchem myszki
-4. domyślne kontrolka dla akcji 'rotate' jest wyłączona,
-5. domyślne kontrolki dla wszystkich akcji medium są wyłączone
-6 rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce
+4. domyślna kontrolka dla akcji 'rotate' (wystający na górze kwadracik na obrazku A) jest wyłączona,
+5. domyślne kontrolki do rozszerzania (kwadraciki na środku każdego z boków na obrazku A) są wyłączone,
+6. rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce.
 
 
 ## Informacje na temat wykorzystanych frameworków
