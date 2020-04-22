@@ -12,12 +12,12 @@
 ### 1. własna implementacja obramowania aktywnego obiektu (dalej - element graficzny)
 **Cel: Zmodyfikuj kod w taki sposób aby po zaznaczeniu elementu graficznego obramowanie zmieniło się z domyślnego (A) w następujące (B):**
 
-### 2. Dodaj przycisk UI symulujący menu kontekstowe dla aktywnego obiektu (dalej - element UI)
-**Cel: Element UI ma służyć do kontrolowania koloru elementu graficznego. Po wciśnięciu następuje zmiana kolor, może być random.
-
 ![](http://nullgravity.eu/github/test_custom_border.png)
 
 Uwaga: obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami ani konkretnym wyglądem ikon przy narożnikach (mogą być dowolne).
+
+### 2. Dodaj przycisk UI symulujący menu kontekstowe dla aktywnego obiektu (dalej - element UI)
+**Cel: Element UI ma służyć do kontrolowania koloru elementu graficznego. Po wciśnięciu następuje zmiana kolor, może być random.
 
 **wymagania:**
 1. element UI musi być pod kontrolą frameworku React, element graficzny z wykorzystaniem Fabric
