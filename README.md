@@ -9,28 +9,36 @@
 
 ## Zadania:
 
-### 1. własna implementacja obramowania aktywnego obiektu
-**Cel: Zmodyfikuj kod w taki sposób aby po zaznaczeniu elementu obramowanie zmieniło się z domyślnego (A) w następujące (B):**
+### 1. własna implementacja obramowania aktywnego obiektu (dalej - element graficzny)
+**Cel: Zmodyfikuj kod w taki sposób aby po zaznaczeniu elementu graficznego obramowanie zmieniło się z domyślnego (A) w następujące (B):**
+
+### 2. Dodaj przycisk UI symulujący menu kontekstowe dla aktywnego obiektu (dalej - element UI)
+**Cel: Element UI ma służyć do kontrolowania koloru elementu graficznego. Po wciśnięciu następuje zmiana kolor, może być random.
 
 ![](http://nullgravity.eu/github/test_custom_border.png)
 
 Uwaga: obrazek B ma na celu tylko zaprezentowanie ostatecznego wyniku, nie należy sugerowac się proporcjami ani konkretnym wyglądem ikon przy narożnikach (mogą być dowolne).
 
 **wymagania:**
-1. padding:
+1. element UI musi być pod kontrolą frameworku React, element graficzny z wykorzystaniem Fabric
+2. padding elementu graficznego:
 - obramowania 10 px od obiektu,
 - ikony na krańcach 10 px od obramowania,
-2. ikony:
+3. ikony elementu graficznego:
 - ikona akcji 'rotate' - kółko
 - ikona akcji 'resize' - trójkąt wskazujący kierunek resize
-3. pozycjonowanie ikon akcji:
+4. pozycjonowanie ikon akcji dla elementu graficznego:
 - left-top - obracanie obramowanego obiektu zgodnie z ruchem myszki
 - right-top - skalowanie obramowanego obiektu (jednocześnie w X i Y) zgodnie z ruchem myszki
 - left-bottom - skalowanie obramowanego obiektu (jednocześnie w X i Y) zgodnie z ruchem myszki
 - right-bottom - obracanie obramowanego obiektu zgodnie z ruchem myszki
-4. domyślna kontrolka dla akcji 'rotate' (wystający na górze kwadracik na obrazku A) jest wyłączona,
-5. domyślne kontrolki do rozszerzania (kwadraciki na środku każdego z boków na obrazku A) są wyłączone,
-6. rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce.
+5. domyślna kontrolka dla akcji 'rotate' (wystający na górze kwadracik na obrazku A) jest wyłączona,
+6. domyślne kontrolki do rozszerzania (kwadraciki na środku każdego z boków na obrazku A) są wyłączone,
+7. element UI może mieć dowolną formę z możliwościa kliknięcia,
+8. kliknięcie powoduje modyfikację koloru aktywnego obiektu na canvasie - kolor może być losowy.
+9. element graficzny jak i element UI są ze sobą skorelowane tzn. przesunięcie elementu graficznego, powoduje przesunięcie elementu UI o taką samą deltę. 
+10. rozwiązanie musi się kompilować oraz uruchamiać w przeglądarce.
+11. uruchomiony projekt musi zawierać przynajmniej 5 elementów graficznych, oraz skorelowanych z nimi elementów UI.
 
 
 ## Informacje na temat wykorzystanych frameworków
