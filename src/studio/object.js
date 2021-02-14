@@ -23,14 +23,16 @@ import { fabric } from 'fabric';
     /**
      * @param {string} control
      * @param {CanvasRenderingContext2D} ctx
+     * @param {string} methodName
+     * @param {number} left
+     * @param {number} top
      * @private
      */
-    _drawControl: function(control, ctx, methodName, left, top, styleOverride) {
-      styleOverride = styleOverride || {};
+    _drawControl: function(control, ctx, methodName, left, top) {
       if (!this.isControlVisible(control)) {
         return;
       }
-      var size = this.cornerSize, stroke = !this.transparentCorners && this.cornerStrokeColor;
+      const size = this.cornerSize, stroke = !this.transparentCorners && this.cornerStrokeColor;
 
 
       switch ( control ) {

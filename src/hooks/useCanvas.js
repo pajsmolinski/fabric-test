@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import {useEffect, useRef, useState} from "react";
 import createFabricCanvas from "./../studio/canvas";
 import createFabricObject from "./../studio/object";
+import {randomNumber} from "../random";
 
 const useCanvas = () => {
     const ref = useRef();
@@ -13,16 +14,24 @@ const useCanvas = () => {
             height: window.innerHeight
         });
 
-        const customObject = createFabricObject();
-        canvas.add(customObject);
+        for (let i = 0; i < 5; i++) {
+            const customObject = createFabricObject();
+            customObject.set({
+                left: randomNumber(0, window.innerWidth),
+                top: randomNumber(0, window.innerHeight),
+                id: i,
+            })
+            canvas.add(customObject);
+        }
 
         function handleEvent(e) {
-            if(!e) {
+            if (!e) {
                 return;
             }
 
             setObjects(canvas.getActiveObjects());
         }
+
         handleEvent('init');
         canvas.on("object:added", handleEvent);
         canvas.on("object:removed", handleEvent);
@@ -35,13 +44,13 @@ const useCanvas = () => {
 
         canvas.renderAll();
     }, [canvas]);
-    
 
-    const setRef = useCallback(node => {
+
+    const setRef = node => {
         ref.current = node;
-    })
+    }
 
-    return [setRef, objects];
+    return [setRef, canvas, objects];
 }
 
 export default useCanvas;

@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import styled from 'styled-components';
 import useCanvas from './../hooks/useCanvas';
 import { RectangleProperties } from './RectangleProperties';
+import {randomColor} from "../random";
 
 const CanvasEl = styled.canvas`
     bottom: 0;
@@ -15,11 +16,16 @@ const CanvasEl = styled.canvas`
 const CanvasComponent = memo(({ canvasRef }) => <CanvasEl ref={ canvasRef }/>);
 
 const Canvas = () => {
-  const [ canvasRef, objects ] = useCanvas();
+  const [ canvasRef, canvas, objects ] = useCanvas();
+
+  const renderRandomColor = (object) => {
+    object.set('fill', randomColor());
+    canvas.renderAll();
+  }
 
   return <>
     <CanvasComponent canvasRef={ canvasRef }/>
-    {objects.map(object => <RectangleProperties rectangle={object} />)}
+    {objects.map(object => <RectangleProperties key={object.id} rectangle={object} onRandomizeColor={renderRandomColor} />)}
   </>;
 };
 
