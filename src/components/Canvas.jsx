@@ -1,6 +1,7 @@
-import React, { memo } from "react";
-import styled from "styled-components";
-import useCanvas from "./../hooks/useCanvas";
+import React, { memo } from 'react';
+import styled from 'styled-components';
+import useCanvas from './../hooks/useCanvas';
+import { RectangleProperties } from './RectangleProperties';
 
 const CanvasEl = styled.canvas`
     bottom: 0;
@@ -11,11 +12,15 @@ const CanvasEl = styled.canvas`
     z-index: 999;
 `;
 
-const CanvasComponent = memo(({canvasRef}) => <CanvasEl ref={canvasRef} />);
+const CanvasComponent = memo(({ canvasRef }) => <CanvasEl ref={ canvasRef }/>);
 
 const Canvas = () => {
-    const [canvasRef] = useCanvas();
-    return <CanvasComponent canvasRef={canvasRef} />;
+  const [ canvasRef, objects ] = useCanvas();
+
+  return <>
+    <CanvasComponent canvasRef={ canvasRef }/>
+    {objects.map(object => <RectangleProperties rectangle={object} />)}
+  </>;
 };
 
 export default Canvas;

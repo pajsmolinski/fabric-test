@@ -4,7 +4,45 @@ import { fabric } from 'fabric';
     fabric.CustomCanvas = fabric.util.createClass(fabric.Canvas, {
         initialize: function(el, options) {
             this.callSuper('initialize', el, options);
-        }
+        },
+        /**
+         * @private
+         * @param {Boolean} alreadySelected true if target is already selected
+         * @param {String} corner a string representing the corner ml, mr, tl ...
+         * @param {Event} e Event object
+         * @param {fabric.Object} [target] inserted back to help overriding. Unused
+         */
+        _getActionFromCorner(alreadySelected, corner, e /* target */) {
+            if (!corner || !alreadySelected) {
+                return 'drag';
+            }
+
+            switch (corner) {
+                case 'tl':
+                case 'br':
+                    return 'rotate';
+                case 'tr':
+                case 'bl':
+                    return 'scale';
+                default:
+                    return 'drag';
+            }
+        },
+        /**
+         * @private
+         */
+        getCornerCursor: function(corner, target, e) {
+            switch ( corner ) {
+                case 'tl':
+                case 'br':
+                    return this.rotationCursor;
+                case 'tr':
+                case 'bl':
+                    return this._getRotatedCornerCursor(corner, target, e);
+                default:
+                    return this.defaultCursor;
+            }
+        },
     })
 })()
 
