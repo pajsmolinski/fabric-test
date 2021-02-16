@@ -1,6 +1,6 @@
-import React from 'react';
-import Canvas from './components/Canvas';
+import React from "react";
+import Canvas from "./components/Canvas";
 
-export default () => {
+export default function App() {
   return <Canvas />;
 }
